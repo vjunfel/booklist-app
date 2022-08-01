@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(85, 85, 85);
+}
+
+#wrapper {
+  width: 80%;
+  height: 100%;
+  margin: 2em;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(234, 234, 232);
+}
+
+h1 {
+  margin-top: 20px;
+  color: rgb(255, 136, 0);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subTitle {
+  margin-top: 15px;
+}
+
+.searchBar {
+  height: 30px;
+  border-radius: 10px;
+  margin: 25px 20%;
+  border: none;
+}
+
+.inputSearch {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  outline: none;
+  color: rgb(75, 75, 75);
+}
+
+.bookTitle {
+  color: rgb(65, 65, 65);
+  margin: 25px;
+}
+
+#book-list {
+  margin: 1em;
+}
+
+h2 {
+  margin: 1em 0.2em;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8em 0;
+  padding: 0.5em;
+  align-items: center;
+  border-left: 4px solid rgb(184, 184, 183);
+  line-height: 1em;
+}
+
+li:hover {
+  border-left: 4px solid rgb(250, 196, 60);
+  background-color: rgb(245, 245, 245);
+}
+
+.name {
+  line-height: 2rem;
+  margin: 10px;
+}
+
+.delete {
+  background-color: rgb(250, 196, 60);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.delete:hover {
+  transform: scale(1.05);
+  transition-delay: ease-in-out 0.5s;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#add-book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  overflow: hidden;
+  margin: 0 20%;
+}
+
+#inputTitle {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid rgb(250, 196, 60);
+  outline: none;
+  padding-left: 10px;
+  color: rgb(75, 75, 75);
+}
+
+.add {
+  width: 90px;
+  height: 100%;
+  background-color: rgb(250, 196, 60);
+  padding: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid rgb(250, 196, 60);
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+}
+
+#bookToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+#hide {
+  /* display: block; */
+  width: 15px;
+  margin: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  background: rgb(234, 234, 232);
+  color: rgb(29, 29, 29);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: Architects Daughter, Righteous, arial;
+}
+
+@media screen and (max-width: 640px) {
+  #wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+  }
+
+  .searchBar {
+    margin: 25px 10%;
+  }
+
+  #add-book {
+    margin: 0 5%;
+    margin-top: 40px;
+  }
+
+  #bookToggle {
+    margin-bottom: 2rem;
+  }
+}
